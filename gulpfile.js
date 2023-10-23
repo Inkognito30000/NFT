@@ -92,7 +92,7 @@ function watching() {
     },
   });
   watch(["app/sass/*.sass"], styles);
-  watch(["app/images/src"], images);
+  watch(["app/images/src",], images);
   watch(["app/js/main.js"], scripts);
   watch(["app/components/*", "app/pages/*"], pages);
   watch(["app/**/*.html"]).on("change", browserSync.reload);

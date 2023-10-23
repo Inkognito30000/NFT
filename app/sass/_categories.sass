@@ -1,0 +1,38 @@
+.categories
+    margin-bottom: 16rem
+    &__title
+        margin-bottom: 6rem
+
+.categories-wrapper
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 3rem
+
+.categories-card 
+    position: relative 
+    max-width: 24rem
+    height: 31.6rem
+    border-radius: 2rem
+    background-color: $color-background-secondary
+    overflow: hidden
+    &__wrapper-bg
+        position: relative
+        border-radius: 2rem 2rem 0 0
+        filter: blur(7.5px)
+        width: 24rem
+        height: 24rem
+        transition: .1s all
+        &:hover
+            filter: none
+    &__title
+        padding: 2rem 3rem 2.5rem 3rem
+    &__icon
+        position: absolute
+        z-index: 50
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -90%)
+        width: 10rem
+        height: 10rem
+
+

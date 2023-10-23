@@ -1,0 +1,70 @@
+.discover
+    margin-bottom: 8rem
+    img
+        width: 100%
+    &__title
+        margin-bottom: 1rem
+    &__btn
+        grid-column: 3 / 4
+        background-color: $color-background
+        border: .2rem solid $color-call-to-action
+        width: 18.7rem
+        height: 6rem
+        justify-self: end
+        align-self: flex-end
+        svg
+            stroke: $color-call-to-action
+            width: 2rem
+            height: 2rem
+            margin-right: 1.2rem
+    &__pustoi
+        grid-row: 2 / 3
+        grid-column: 1 / -1
+        width: 100%
+
+.discover-wrapper
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: min-content min-content auto
+    gap: 3rem
+    margin-bottom: 8rem
+
+.discover-titles
+    grid-column: 1 / 3
+
+.discover-card
+    max-width: 33rem
+    height: 46.9rem
+    border-radius: 2rem
+    background-color: $color-background-secondary
+    &__title
+        margin-bottom: 0.5rem
+    &__artist-wrapper
+        padding: 2rem 3rem 2.5rem
+    &__signature-wrapper
+        display: flex
+        align-items: center
+        margin-bottom: 2.5rem
+        img
+            margin-right: 1.2rem
+            width: 2.4rem
+            height: 2.4rem
+    &__signature
+        font-family: "Space Mono"
+    &__caption
+        font-size: 1.2rem
+        font-weight: 400
+        line-height: 1.1
+        color: $color-caption-label-text
+        margin-bottom: 0.8rem
+    &__wrapper-bottom
+        font-family: "Space Mono"
+        display: flex
+        justify-content: space-between
+    &__highest-bid
+        display: flex
+        flex-direction: column
+        align-items: end
+
+            
+
