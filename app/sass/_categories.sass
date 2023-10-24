@@ -1,7 +1,12 @@
 .categories
     margin-bottom: 16rem
+    @media only screen and (max-width : 834px)
+        margin-bottom: 8rem
+    
     &__title
         margin-bottom: 6rem
+        @media only screen and (max-width : 834px)
+            margin-bottom: 4rem
 
 .categories-wrapper
     display: grid
@@ -15,6 +20,9 @@
     border-radius: 2rem
     background-color: $color-background-secondary
     overflow: hidden
+    @media only screen and (max-width : 834px)
+        max-width: 15rem
+        height: 20.9rem
     &__wrapper-bg
         position: relative
         border-radius: 2rem 2rem 0 0
@@ -24,8 +32,18 @@
         transition: .1s all
         &:hover
             filter: none
+        @media only screen and (max-width : 834px)
+            width: 15rem
+            height: 14.2rem
+            img
+                width: 15rem
+                height: 14.2rem
     &__title
         padding: 2rem 3rem 2.5rem 3rem
+        @media only screen and (max-width : 834px)
+            padding: 2rem 2rem 2.5rem 2rem
+            font-size: 1.6rem
+            width: 18rem
     &__icon
         position: absolute
         z-index: 50
@@ -34,5 +52,12 @@
         transform: translate(-50%, -90%)
         width: 10rem
         height: 10rem
+        @media only screen and (max-width : 834px)
+            width: 8rem
+            height: 8rem
+            img
+                width: 8rem
+                height: 8rem
+        
 
 

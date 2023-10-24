@@ -1,7 +1,11 @@
 .creators
     margin-bottom: 16rem
+    @media only screen and (max-width : 834px)
+        margin-bottom: 8rem
     &__wrapper-titles
         grid-column: 1 / 4
+        @media only screen and (max-width : 834px)
+            grid-column: 1 / 2
     &__title
         margin-bottom: 1rem
     &__subtitle
@@ -15,6 +19,8 @@
         height: 6rem
         justify-self: end
         align-self: flex-end
+        @media only screen and (max-width : 834px)
+            grid-column: 2 / 3
         svg
             stroke: $color-call-to-action
             width: 2rem
@@ -25,12 +31,19 @@
         grid-column: 1 / -1
         height: 6rem
         width: 100%
+        @media only screen and (max-width : 834px)
+            height: .1rem
 
 .creators-wrapper
     display: grid
     grid-template-columns: repeat(4, 1fr)
     grid-template-rows: min-content auto 1fr 1fr 1fr
     gap: 2rem
+    @media only screen and (max-width : 834px)
+        grid-template-columns: 1fr 1fr
+
+.wrapper-inner
+    padding: 2rem
 
 .creators-card
     position: relative
@@ -42,12 +55,21 @@
     display: flex
     flex-direction: column
     align-items: center
+    @media only screen and (max-width : 834px)
+        flex-direction: row
+        max-width: 33rem
+        height: 10rem
     img
         margin-bottom: 2rem
         width: 12rem
         height: 12rem
+        @media only screen and (max-width : 834px)
+            width: 6rem
+            height: 6rem
+            margin-bottom: 0
     &__title
         margin-bottom: 0.5rem
+        width: 21rem
     &__number
         position: absolute
         left: 2rem
@@ -61,6 +83,9 @@
         background-color: $color-background
         font-weight: 400
         color: $color-caption-label-text
+        @media only screen and (max-width : 834px)
+            left: 1.2rem
+            top: 1.3rem
         p
             font-family: Space Mono
     &__total-wrapper
@@ -68,7 +93,11 @@
         gap: 1rem
     &__sales
         color: $color-caption-label-text
+        @media only screen and (max-width : 834px)
+            width: 10rem
     &__price
         font-family: Space Mono
+        @media only screen and (max-width : 834px)
+            width: 10rem
 
         

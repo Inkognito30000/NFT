@@ -4,8 +4,14 @@
         display: grid
         grid-template-columns: repeat(2, 1fr)
         gap: 3rem
+        @media only screen and (max-width : 375px)
+            grid-template-columns: auto 0
+            grid-template-rows: repeat(3, 1fr)
+            gap: 0
     &__left-wrapper
         max-width: 50rem
+    @media only screen and (max-width : 375px)
+        margin: 4rem 0
         
 .hero-title
     margin-bottom: 2rem
@@ -13,6 +19,8 @@
 .hero-btn
     width: 22rem
     margin-bottom: 3rem
+    @media only screen and (max-width : 834px)
+        margin-bottom: 2rem
     svg
         width: 2rem
         height: 2rem
@@ -21,19 +29,36 @@
 .additional-info-wrapper
     display: flex
     gap: 3rem
+    @media only screen and (max-width : 375px)
+        flex-wrap: wrap
+        grid-row: 3 / 4
+        grid-column: 1 / -1
+
+.additional-info
+    width: 15rem
+    @media only screen and (max-width : 834px)
+        width: 9rem
 
 .quantity
     font-family: "Space Mono"
     font-size: 2.8rem
     font-weight: 700
     line-height: 1.4
+    @media only screen and (max-width : 834px)
+        font-size: 2.2rem
+        line-height: 1.6
 
 .quantity-content
     font-size: 2.4rem
     line-height: 1.6
+    @media only screen and (max-width : 834px)
+        font-size: 1.6rem
+        line-height: 1.4
 
 .hero-subtitle
     margin-bottom: 3rem
+    @media only screen and (max-width : 834px)
+        margin-bottom: 2rem
 
 
 
@@ -43,6 +68,16 @@
     max-width: 51rem
     height: 40rem
     border-radius: 2rem
+    @media only screen and (max-width : 834px)
+        max-width: 33rem
+        height: 33rem
+    @media only screen and (max-width : 375px)
+        grid-row: 2 / 3
+        grid-column: 1 / -1
+    &__img
+        @media only screen and (max-width : 834px)
+            width: 33rem
+            height: 22.1rem
     &__wrapper
         display: flex
         align-items: center
@@ -54,7 +89,8 @@
         margin-bottom: 1rem
     &__name
         font-weight: 400
-    &__img
+    &__icon
         width: 2.4rem
         height: 2.4rem
         margin-right: 1.2rem
+        

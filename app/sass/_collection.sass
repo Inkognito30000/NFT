@@ -1,9 +1,13 @@
 .collection
-    margin-bottom: 16rem  
+    margin-bottom: 16rem
+    @media only screen and (max-width : 834px)
+        margin-bottom: 8rem  
     &__title
         margin-bottom: 1rem
     &__subtitle
         margin-bottom: 6rem
+        @media only screen and (max-width : 834px)
+            margin-bottom: 4rem
 
 .collection-wrapper
     display: flex
@@ -12,6 +16,9 @@
 .collection-card
     max-width: 33rem
     height: 52.5rem
+    @media only screen and (max-width : 834px)
+        &:last-of-type
+            display: none
     &__primary-photo
         margin-bottom: 1.5rem           
     &__img-wrapper
@@ -20,6 +27,10 @@
         img
             margin-right: 1.5rem
         &_number
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 10rem
             font-family: "Space Mono"
             font-weight: 700 
             padding: 3.2rem 1.5rem
