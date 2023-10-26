@@ -12,6 +12,8 @@
         height: 6rem
         justify-self: end
         align-self: flex-end
+        @media only screen and (max-width : 375px)
+            width: 100%
         svg
             stroke: $color-call-to-action
             width: 2rem
@@ -19,11 +21,16 @@
             margin-right: 1.2rem
         @media only screen and (max-width : 834px)
             grid-column: 2 / 3
+        @media only screen and (max-width : 375px)
+            grid-column: 1 / 2
+            grid-row: 3 / 4
     &__pustoi
         grid-row: 2 / 3
         grid-column: 1 / -1
         width: 100%
         @media only screen and (max-width : 834px)
+            display: none
+        @media only screen and (max-width : 375px)
             display: none
 
 .discover-wrapper
@@ -34,6 +41,10 @@
     margin-bottom: 8rem
     @media only screen and (max-width : 834px)
         grid-template-columns: repeat(2, 1fr)
+    @media only screen and (max-width : 375px)
+        grid-template-columns: auto 0
+        margin-bottom: 6rem
+        gap: 0
 
 .discover-titles
     grid-column: 1 / 3
@@ -76,6 +87,12 @@
     @media only screen and (max-width : 834px)
         &:last-child
             display: none
+    @media only screen and (max-width : 375px)
+        &:last-child
+            display: table
+        margin-bottom: 2rem
+        &:last-child
+            margin-bottom: 0
 
 .discover-bg
     height: 106rem
@@ -86,6 +103,14 @@
         background: url(/images/NFT-Tablet.webp), url(linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%))
         max-width: 83.4rem
         background-size: auto
+        @media only screen and (max-width : 375px)
+            width: 100%
+            height: 60rem
+            background-size: cover
 
-            
+.discover-box
+    grid-row: 2 / 3
+    @media only screen and (max-width : 375px)
+        padding: 4rem 0
+    
 
